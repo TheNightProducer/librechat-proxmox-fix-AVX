@@ -105,7 +105,7 @@ After=network.target mongod.service meilisearch.service rag-api.service
 [Service]
 Type=simple
 User=root
-WorkingDirectory=/opt/libreMONGO_VERSIONchat
+WorkingDirectory=/opt/librechat
 EnvironmentFile=/opt/librechat/.env
 ExecStart=/usr/bin/npm run backend
 Restart=on-failure
